@@ -5,7 +5,9 @@
  */
 import AppHeader from './AppHeader'
 import StickyMenu from './StickyMenu'
+import Skills from './Skills'
 import './App.css';
+import skills from '../data/skills'
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -21,7 +23,7 @@ const menuItemStyle = {
 };
 
 const activeMenuItemStyle = {
-    fontWeight: 800
+    fontWeight: 400
 };
 
 const appMenuItems = [
@@ -50,6 +52,8 @@ class App extends Component {
                                 onLanguageSelected={onLanguageSelected}
                                 menuItems={this.menuItems()}/>
                 </AppHeader>
+
+                <Skills skills={skills}/>
 
                 <Segment style={{minHeight:'200em'}} inverted>
                 </Segment>

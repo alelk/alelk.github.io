@@ -6,6 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl'
 import {
     Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility, Flag
 } from 'semantic-ui-react';
@@ -16,19 +17,23 @@ const menuStyle = {
     boxShadow: 'none',
     marginBottom: '1em',
     marginTop: '4em',
-    transition: 'box-shadow 1s ease, padding 1s ease',
+    transition: 'box-shadow 2s ease, padding 2s ease, background-color 2s ease'
 };
 
 const fixedMenuStyle = {
-    border: '1px solid #666',
-    boxShadow: '0px 3px 5px #444',
+    border: '1px solid #000',
+    backgroundColor: "#111",
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, .9)'
 };
 
 const renderLanguagesMenu = (currentLangId, languages, onSelect) => {
     const currentLanguage = languages.find(l => l.id === currentLangId);
     return (
         <Menu.Menu position='right'>
-            <Dropdown text={currentLanguage && <Flag name={currentLanguage.flagName}/>} pointing className='link item'>
+            <Dropdown icon={currentLanguage && <Flag name={currentLanguage.flagName}/>}
+                      className='link item'
+                      button
+                      pointing>
                 <Dropdown.Menu>
                     {
                         languages.map(language =>
