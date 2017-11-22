@@ -1,8 +1,34 @@
+import RootContainer from './containers/RootContainer'
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
+import configureStore from './store/configureStore'
+import {loadMessages} from './messages/messages'
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import createHistory from 'history/createBrowserHistory'
+import {addLocaleData} from 'react-intl'
+import enLocaleData from 'react-intl/locale-data/en'
+import ruLocaleData from 'react-intl/locale-data/ru'
+import 'semantic-ui-css/semantic.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+addLocaleData([...enLocaleData, ...ruLocaleData]);
+
+const locale = 'en';
+
+const preloadedState = {
+    intl : {
+        locale: locale,
+        messages: loadMessages(locale)
+    }
+};
+
+const history = createHistory();
+const store = configureStore(history, preloadedState);
+
+const AppWrapper = () => (
+    <RootContainer store={store} history={history}/>
+);
+
+ReactDOM.render(<AppWrapper />, document.getElementById('root'));
 registerServiceWorker();
