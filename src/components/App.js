@@ -5,7 +5,7 @@
  */
 import AppHeader from './AppHeader'
 import StickyMenu from './StickyMenu'
-import Skills from './Skills'
+import Skills from './skill/Skills'
 import './App.css';
 import skills from '../data/skills'
 
@@ -54,9 +54,6 @@ class App extends Component {
                 </AppHeader>
 
                 <Skills skills={skills}/>
-
-                <Segment style={{minHeight:'200em'}} inverted>
-                </Segment>
             </div>
         );
     }

@@ -17,7 +17,7 @@ const menuStyle = {
     boxShadow: 'none',
     marginBottom: '1em',
     marginTop: '4em',
-    transition: 'box-shadow 2s ease, padding 2s ease, background-color 2s ease'
+    transition: 'box-shadow 1s ease, padding 1s ease, background-color 1s ease'
 };
 
 const fixedMenuStyle = {
