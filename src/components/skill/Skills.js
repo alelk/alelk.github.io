@@ -3,10 +3,11 @@
  *
  * Created by Alex Elkin on 22.11.2017.
  */
+import Skill, {skillType} from './Skill'
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-
 import {
     Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
 } from 'semantic-ui-react'
@@ -21,19 +22,9 @@ const renderSkill = (skill, key) => (
 
 const Skills = ({skills}) => (
     <Segment inverted>
-        {skills && skills.map(renderSkill)}
+        {skills && skills.map((skill, key) => <Skill skill={skill} key={key} isGroup/>)}
     </Segment>
 );
-
-export const skillType = PropTypes.shape({
-    titleId: PropTypes.string,
-    defaultTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-    level: PropTypes.number,
-    href: PropTypes.string
-});
-
-skillType.skills = PropTypes.arrayOf(skillType);
-skillType.groups = PropTypes.arrayOf(skillType);
 
 Skills.propTypes = {
     skills: PropTypes.arrayOf(skillType)
