@@ -8,8 +8,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 import {
-    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility, Progress
+    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility, Progress, Popup
 } from 'semantic-ui-react'
+
+const renderProgress = (skill, isGroup, nestingLevel) => (
+    <Progress percent={skill.level} size={isGroup && nestingLevel == 0 ? "large" : "medium"}
+              inverted
+              color='black'
+              progress
+              style={{width:'50%', minWidth:'300px'}}/>
+);
 
 const renderSkill = (skill, isGroup, nestingLevel) => (
     <Grid stackable columns={2}>
@@ -17,15 +25,13 @@ const renderSkill = (skill, isGroup, nestingLevel) => (
             <FormattedMessage id={skill.titleId} defaultMessage={skill.defaultTitle}/>
         </Grid.Column>
         <Grid.Column>
-            <Progress percent={skill.level} size={isGroup && nestingLevel == 0 ? "large" : "medium"}
-                      inverted
-                      color='black'
-                      progress
-                      style={{width:'50%', minWidth:'300px'}}/>
+            <Popup trigger={renderProgress(skill, isGroup, nestingLevel)} wide="very" on={['hover', 'click']} hideOnScroll>
+                <Popup.Header><FormattedMessage id={skill.titleId} defaultMessage={skill.defaultTitle}/></Popup.Header>
+                <Popup.Content><FormattedMessage id={skill.commentId}/></Popup.Content>
+            </Popup>
         </Grid.Column>
     </Grid>
 );
-
 
 const Skill = ({skill, isGroup, nestingLevel=0}) => (
     <Container>
@@ -44,6 +50,7 @@ const Skill = ({skill, isGroup, nestingLevel=0}) => (
 
 export const skillType = PropTypes.shape({
     titleId: PropTypes.string,
+    commentId: PropTypes.string,
     defaultTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     level: PropTypes.number,
     href: PropTypes.string
