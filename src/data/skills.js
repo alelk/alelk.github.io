@@ -7,6 +7,7 @@
 const skills = [
     {
         titleId: "skills.java",
+        commentId: "skills.java_comment",
         defaultTitle: "Java Development",
         level: 90,
         skills: [
@@ -82,6 +83,7 @@ const skills = [
                 ]
             }, {
                 titleId: "skills.java.build-tools",
+                commentId: "skills.java.build-tools_comment",
                 defaultTitle: "Build Automation Tools",
                 level: 50,
                 skills: [
@@ -123,6 +125,7 @@ const skills = [
         ]
     }, {
         titleId: "skills.web",
+        commentId : "skills.web_comment",
         defaultTitle: "Web Development",
         level: 70,
         skills: [
@@ -195,6 +198,11 @@ const skills = [
                         level: 50,
                         href: "https://github.com/yahoo/react-intl"
                     }, {
+                        titleId: "skills.web.libraries.react-table",
+                        defaultTitle: "React Table",
+                        level: 80,
+                        href: "https://react-table.js.org"
+                    }, {
                         titleId: "skills.web.libraries.sockjs",
                         defaultTitle: "SockJS",
                         level: 50,
@@ -215,7 +223,7 @@ const skills = [
                         level: 60,
                         href: "http://www.chartjs.org"
                     }, {
-                        titleId: "skills.web.libraries.normalizer",
+                        titleId: "skills.web.libraries.normalizr",
                         defaultTitle: "normalizr",
                         level: 70,
                         href: "http://github.com/paularmstrong/normalizr"
@@ -242,6 +250,7 @@ const skills = [
         ]
     }, {
         titleId: "skills.android",
+        commentId: "skills.android_comment",
         defaultTitle: "Android Development",
         level: 50,
         skills: [
@@ -260,6 +269,115 @@ const skills = [
                 defaultTitle: "Data Binding Library",
                 level: 40,
                 href: "https://developer.android.com/topic/libraries/data-binding/index.html"
+            }
+        ]
+    }, {
+        titleId: "skills.c-sharp",
+        commentId: "skills.c-sharp_comment",
+        defaultTitle: "C# Development",
+        level: 40
+    }, {
+        titleId: "skills.databases",
+        defaultTitle: "Databases",
+        level: 40,
+        skills: [
+            {
+                titleId: "skills.databases.sql",
+                defaultTitle: "SQL",
+                level: 60,
+                href: "https://www.w3schools.com/sql"
+            }, {
+                titleId: "skills.databases.sqlite",
+                defaultTitle: "SQLite",
+                level: 90,
+                href: "https://www.sqlite.org"
+            }, {
+                titleId: "skills.databases.postgresql",
+                defaultTitle: "PostgreSQL",
+                level: 50,
+                href: "https://www.postgresql.org/"
+            }, {
+                titleId: "skills.databases.mysql",
+                defaultTitle: "MySQL",
+                level: 30,
+                href: "https://www.mysql.com/"
+            },
+        ]
+    }, {
+        titleId: "skills.vcs",
+        defaultTitle: "Version Control Systems",
+        level: 70,
+        skills: [
+            {
+                titleId: "skills.vcs.git",
+                defaultTitle: "Git",
+                level: 90,
+                href: "https://git-scm.com"
+            }, {
+                titleId: "skills.vcs.svn",
+                defaultTitle: "SVN",
+                level: 20,
+                href: "http://subversion.apache.org"
+            },
+        ]
+    }, {
+        titleId: "skills.os",
+        commentId: "skills.os_comment",
+        defaultTitle: "Software Operating Systems",
+        level: 70,
+        skills: [
+            {
+                titleId: "skills.os.linux",
+                defaultTitle: "Linux",
+                level: 60,
+                href: "https://www.ubuntu.com/"
+            }, {
+                titleId: "skills.os.windows",
+                defaultTitle: "Windows",
+                level: 60,
+                href: "http://www.microsoft.com/en-us/windows/"
+            }
+        ]
+    }, {
+        titleId: "skills.scada",
+        commentId: "skills.scada_comment",
+        defaultTitle: "SCADA Development",
+        level: 40,
+        skills: [
+            {
+                titleId: "skills.scada.ms3",
+                defaultTitle: "Master SCADA 3.x",
+                level: 60,
+                href: "http://insat.ru"
+            }, {
+                titleId: "skills.scada.ms4",
+                defaultTitle: "Master SCADA 4D",
+                level: 30,
+                href: "http://insat.ru"
+            }, {
+                titleId: "skills.scada.universal-opc",
+                defaultTitle: "Universal Master OPC Server",
+                level: 90,
+                href: "http://insat.ru"
+            }
+        ]
+    }, {
+        titleId: "skills.other",
+        defaultTitle: "C/C++, Assembler, Perl etc.",
+        level: 20,
+        skills: [
+            {
+                titleId: "skills.other.cpp",
+                defaultTitle: "C/C++",
+                level: 20
+            }, {
+                titleId: "skills.other.perl",
+                defaultTitle: "Perl",
+                level: 40
+            }, {
+                titleId: "skills.other.assembler",
+                defaultTitle: "Assembler",
+                level: 10
             }
         ]
     }
