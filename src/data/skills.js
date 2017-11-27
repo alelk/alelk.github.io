@@ -8,52 +8,62 @@ const skills = [
     {
         titleId: "skills.java",
         commentId: "skills.java_comment",
+        descriptionId: "skills.java_description",
         defaultTitle: "Java Development",
         level: 90,
         skills: [
             {
                 titleId: "skills.java.se-ee",
                 defaultTitle: "Java SE/Java EE",
+                descriptionId: "skills.java.se-ee_description",
                 level: 90,
                 href: "http://www.oracle.com/technetwork/java/javaee/overview/index.html"
             }, {
                 titleId: "skills.java.spring",
                 defaultTitle: "Spring Framework",
+                descriptionId: "skills.java.spring_description",
                 level: 90,
                 href: "http://spring.io"
             }, {
                 titleId: "skills.java.hibernate",
                 defaultTitle: "Hibernate",
+                descriptionId: "skills.java.hibernate_description",
                 level: 70,
                 href: "http://hibernate.org"
             }, {
                 titleId: "skills.java.rxjava",
                 defaultTitle: "RxJava",
+                descriptionId: "skills.java.rxjava_description",
                 level: 70,
                 href: "http://reactivex.io"
             }, {
                 titleId: "skills.java.thymeleaf",
                 defaultTitle: "Thymeleaf",
+                descriptionId: "skills.java.thymeleaf_description",
                 level: 40,
                 href: "http://www.thymeleaf.org"
             }, {
                 titleId: "skills.java.java-streams",
                 defaultTitle: "Java 8 Stream Api",
+                descriptionId: "skills.java.java-streams_description",
                 level: 60,
                 href: "http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html"
             }, {
                 titleId: "skills.java.java-lambda",
                 defaultTitle: "Java Lambda Expressions",
+                descriptionId: "skills.java.java-lambda_description",
                 level: 90,
                 href: "http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html"
             }, {
                 titleId: "skills.java.java-generics",
                 defaultTitle: "Java Generics",
+                descriptionId: "skills.java.java-generics_description",
                 level: 80,
                 href: "http://en.wikipedia.org/wiki/Generics_in_Java"
             }, {
                 titleId: "skills.java.java-reflection",
                 defaultTitle: "Java Reflection API",
+                descriptionId: "skills.java.java-reflection_description",
                 level: 40,
                 href: "https://docs.oracle.com/javase/tutorial/reflect"
             }
@@ -67,16 +77,19 @@ const skills = [
                     {
                         titleId: "skills.java.libraries.jasper-reports",
                         defaultTitle: "JasperReports",
+                        descriptionId: "skills.java.libraries.jasper-reports_description",
                         level: 70,
                         href: "https://community.jaspersoft.com"
                     }, {
                         titleId: "skills.java.libraries.freemarker",
                         defaultTitle: "FreeMarker",
+                        descriptionId: "skills.java.libraries.freemarker_description",
                         level: 50,
                         href: "http://freemarker.org"
                     }, {
                         titleId: "skills.java.libraries.jackson",
                         defaultTitle: "Jackson",
+                        descriptionId: "skills.java.libraries.jackson_description",
                         level: 90,
                         href: "http://wiki.fasterxml.com/JacksonHome"
                     }
@@ -90,16 +103,19 @@ const skills = [
                     {
                         titleId: "skills.java.build-tools.maven",
                         defaultTitle: "Maven",
+                        descriptionId: "skills.java.build-tools.maven_description",
                         level: 80,
                         href: "http://maven.apache.org"
                     }, {
                         titleId: "skills.java.build-tools.gradle",
                         defaultTitle: "Gradle",
+                        descriptionId: "skills.java.build-tools.gradle_description",
                         level: 40,
                         href: "http://gradle.org"
                     }, {
                         titleId: "skills.java.build-tools.ant",
                         defaultTitle: "Ant",
+                        descriptionId: "skills.java.build-tools.ant_description",
                         level: 20,
                         href: "http://ant.apache.org"
                     }
@@ -112,11 +128,13 @@ const skills = [
                     {
                         titleId: "skills.java.testing.junit",
                         defaultTitle: "JUnit",
+                        descriptionId: "skills.java.testing.junit_description",
                         level: 30,
                         href: "http://junit.org"
                     }, {
                         titleId: "skills.java.testing.mockito",
                         defaultTitle: "Mockito",
+                        descriptionId: "skills.java.testing.mockito_description",
                         level: 60,
                         href: "http://site.mockito.org"
                     },
