@@ -1,0 +1,13 @@
+.Skill .clickable .progress,
+.Skill .clickable .skillTitle
+{
+    cursor: pointer;
+}
+
+.Skill .clickable .progress:hover {
+    box-shadow: 0 0 12px #cfc9ff !important;
+}
+
+.Skill .clickable .skillTitle:hover {
+    text-shadow: 0 0 12px #cfc9ff !important;
+}

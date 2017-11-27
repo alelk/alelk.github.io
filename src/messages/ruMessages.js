@@ -10,32 +10,69 @@ const messages = {
     'menu.skills' : "Знания",
     'menu.projects' : "Проекты",
     'menu.language' : "Язык",
+    'action.more' : "Подробнее",
 
     "skills.java" : "Разработка на Java",
+    "skills.java_description" : "Java— сильно типизированный объектно-ориентированный язык программирования. " +
+    "Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой компьютерной " +
+    "архитектуре, с помощью виртуальной Java-машины.",
     "skills.java_comment" : "Разработка back-end на Java - моё избранное направление.  Последние достижения " +
     "в этой области: Spring Framework (injection, MVC, Spring Data JPA и т.д.), Hibernate, RxJava, " +
     "Java Stream API, lambda-выражения.",
     "skills.java.se-ee" : "Java SE/Java EE",
+    "skills.java.se-ee_description" : "Java EE — набор спецификаций и соответствующей документации для языка Java, " +
+    "описывающей архитектуру серверной платформы для задач средних и крупных предприятий.",
     "skills.java.spring" : "Spring Framework",
+    "skills.java.spring_description" : "Spring Framework - универсальный фрейморк и контейнер инверсии контроля для" +
+    " современных бизнес-приложений на Java",
     "skills.java.hibernate" : "Hibernate",
+    "skills.java.hibernate_description" : "Hibernate — библиотека для Java, предназначенная для решения задач " +
+    "объектно-реляционного отображения (ORM)",
     "skills.java.rxjava" : "RxJava",
+    "skills.java.rxjava_description" : "RxJava - Reactive Java Extension - библиотека для асинхронного " +
+    "событейно-ориентированного программирования на Java",
     "skills.java.thymeleaf" : "Thymeleaf",
+    "skills.java.thymeleaf_description" : "Thymeleaf - современный XML/HTML/HTML5 шаблонный движок для Java и Spring Framework.",
     "skills.java.java-streams" : "Java 8 Stream Api",
-    "skills.java.java-lambda" : "Lambda Expressions",
+    "skills.java.java-streams_description" : "Java 8 Stream API - классы для поддержки функционального стиля " +
+    "программирования в Java, позволяющие оперировать потоками объектов",
+    "skills.java.java-lambda" : "Lambda-выражения",
+    "skills.java.java-lambda_description" : "Lambda-выражения - анонимная реализация функциональных интерфейсов, " +
+    "представленная ввиде удобных блоков кода",
     "skills.java.java-generics" : "Java Generics",
+    "skills.java.java-generics_description" : "Java Generics - реализация обобщенного программирования в Java. " +
+    "Данная технология позволяет определять тип или метод, способный оперировать объектами различных типов и при этом " +
+    "гарантировать безопасность типов во время компиляции.",
     "skills.java.java-reflection" : "Java Reflection API",
+    "skills.java.java-reflection_description" : "Java Reflection API - механизм исследования данных о программе во время её выполнения.",
     "skills.java.libraries" : "Библиотеки",
     "skills.java.libraries.jasper-reports" : "JasperReports",
+    "skills.java.libraries.jasper-reports_description" : "JasperReports - библиотека генерации отчетов в Java в форматах " +
+    "PDF, HTML, MS Word, MS Excel, csv, xml и т.д.",
     "skills.java.libraries.freemarker" : "FreeMarker",
+    "skills.java.libraries.freemarker_description" : "FreeMarker - простой и легковесный шаблонный движок.",
     "skills.java.libraries.jackson" : "Jackson",
+    "skills.java.libraries.jackson_description" : "Jackson - высокопроизводительный JSON обработчик в Java",
     "skills.java.build-tools" : "Системы сборки проектов",
     "skills.java.build-tools_comment" : "Во всех своих проектах использую Maven. С Gradle знаком благодаря Android.",
     "skills.java.build-tools.maven" : "Maven",
+    "skills.java.build-tools.maven_description" : "Maven - инструмент управления и сборки Java проекта. Основан на " +
+    "концепции объектного предстваления модели проекта (POM), что позволяет выполнять компиляцию, создания отчетов и " +
+    "документации, используя сентрализованную информационную модель.",
     "skills.java.build-tools.gradle" : "Gradle",
+    "skills.java.build-tools.gradle_description" : "Gradle — система автоматической сборки, построенная на принципах " +
+    "Apache Ant и Apache Maven, но предоставляющая DSL на языке Groovy вместо традиционной XML-образной формы " +
+    "представления конфигурации проекта.",
     "skills.java.build-tools.ant" : "Ant",
+    "skills.java.build-tools.ant_description" : "Apache Ant — утилита для автоматизации процесса сборки программного " +
+    "продукта. Является платформонезависимым аналогом утилиты make, где все команды записываются в XML-формате.",
     "skills.java.testing": "Unit-тестирование",
     "skills.java.testing.junit": "JUnit",
+    "skills.java.testing.junit_description": "JUnit — библиотека для модульного тестирования программного обеспечения " +
+    "на языке Java.",
     "skills.java.testing.mockito": "Mockito",
+    "skills.java.testing.mockito_description": "Mockito - фреймворк, предназначеный для создание заглушек, " +
+    "которые можно использовать при написании Unit тестов вместо реальных классов или интерфейсов.",
 
     "skills.web" : "Web-разработка",
     "skills.web_comment" : "Освоив React и Redux, я весьма заинтересовался областью веб-разработки. " +
