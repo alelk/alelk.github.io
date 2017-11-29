@@ -12,6 +12,9 @@ const messages = {
     'menu.language' : "Language",
     'action.more' : "More",
 
+    'contacts.phone' : '+7 (904) 069-24-23',
+    'contacts.email' : 'elckinne@gmail.com',
+
     "skills.java" : "Java Development",
     "skills.java_description" : "Java is a general-purpose computer programming language that is concurrent, " +
     "class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",

@@ -6,7 +6,7 @@
 
 import React from 'react'
 import {
-    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
+    Container,Header, Segment
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
 

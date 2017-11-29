@@ -4,6 +4,7 @@
  * Created by Alex Elkin on 21.11.2017.
  */
 import AppHeader from './AppHeader'
+import AppFooter from './AppFooter'
 import StickyMenu from './StickyMenu'
 import Skills from './skill/Skills'
 import './App.css';
@@ -12,9 +13,6 @@ import skills from '../data/skills'
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Route, Link } from 'react-router-dom'
-import {
-    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
-} from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
 
 const menuItemStyle = {
@@ -45,7 +43,7 @@ class App extends Component {
     render() {
         const {currentLangId, languages, onLanguageSelected} = this.props;
         return (
-            <div className="App">
+            <div className="App" style={{backgroundColor: "#1b1c1d"}}>
                 <AppHeader>
                     <StickyMenu languages={languages}
                                 currentLangId={currentLangId}
@@ -53,7 +51,8 @@ class App extends Component {
                                 menuItems={this.menuItems()}/>
                 </AppHeader>
                 <Route exact path="/" render={() => <Skills skills={skills}/>}/>
-                <Route path="/projects" render={() => <div style={{color:'white'}}>The Projects page not yet completed.</div>}/>
+                <Route path="/projects" render={() => <div style={{color:'white'}}>The Projects page is developing yet.</div>}/>
+                <AppFooter menuItems={this.menuItems()}/>
             </div>
         );
     }

@@ -6,9 +6,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl'
 import {
-    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility, Flag
+    Container, Dropdown, Menu, Visibility, Flag
 } from 'semantic-ui-react';
 
 const menuStyle = {
