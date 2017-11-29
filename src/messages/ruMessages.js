@@ -28,6 +28,10 @@ const messages = {
     "skills.java.hibernate" : "Hibernate",
     "skills.java.hibernate_description" : "Hibernate — библиотека для Java, предназначенная для решения задач " +
     "объектно-реляционного отображения (ORM)",
+    "skills.java.jpa" : "JPA",
+    "skills.java.jpa_description" : "JPA – технология, обеспечивающая объектно-реляционное отображение простых " +
+    "JAVA объектов и предоставляющая API для сохранения, получения и управления такими объектами. " +
+    "JPA – спецификация (документ, утвержденный как стандарт, описывающий все аспекты технологии), часть EJB3 спецификации.",
     "skills.java.rxjava" : "RxJava",
     "skills.java.rxjava_description" : "RxJava - Reactive Java Extension - библиотека для асинхронного " +
     "событейно-ориентированного программирования на Java",

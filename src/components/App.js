@@ -52,8 +52,8 @@ class App extends Component {
                                 onLanguageSelected={onLanguageSelected}
                                 menuItems={this.menuItems()}/>
                 </AppHeader>
-
-                <Skills skills={skills}/>
+                <Route exact path="/" render={() => <Skills skills={skills}/>}/>
+                <Route path="/projects" render={() => <div style={{color:'white'}}>The Projects page not yet completed.</div>}/>
             </div>
         );
     }

@@ -31,6 +31,12 @@ const skills = [
                 level: 70,
                 href: "http://hibernate.org"
             }, {
+                titleId: "skills.java.jpa",
+                defaultTitle: "Java Persistence Api",
+                descriptionId: "skills.java.jpa_description",
+                level: 70,
+                href: "http://hibernate.org"
+            }, {
                 titleId: "skills.java.rxjava",
                 defaultTitle: "RxJava",
                 descriptionId: "skills.java.rxjava_description",
