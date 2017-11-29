@@ -8,20 +8,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 import {
-    Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility, Progress, Popup, Message, Button
+    Container, Grid, Header, Progress, Popup, Message, Button
 } from 'semantic-ui-react'
 import './Skill.css'
 
-const renderProgress = (skill, isGroup, nestingLevel, isClickable) => (
-    <Progress percent={skill.level} size={isGroup && nestingLevel == 0 ? "large" : "medium"}
+const renderSkillLevel = (skill, isGroup, nestingLevel) => (
+    <Progress percent={skill.level} size={isGroup && nestingLevel === 0 ? "large" : "medium"}
               inverted
               color='black'
               progress
+              className='skillLevel'
               style={{width:'50%', minWidth:'300px'}}/>
 );
 
-const SkillPopup = ({skill, children}) => (
-    <Popup trigger={children} wide="very" on={['click']} hideOnScroll position="bottom center">
+const renderSkillPopup = (skill, trigger) => (
+    <Popup trigger={trigger} wide="very" on={['click']} hideOnScroll position="bottom center">
         <Popup.Content>
             {skill.commentId && <FormattedMessage id={skill.commentId}/>}
             {skill.descriptionId &&
@@ -51,22 +52,21 @@ const renderSkillGrid = (skill, isGroup, nestingLevel, isClickable) => (
             </div>
         </Grid.Column>
         <Grid.Column>
-            {renderProgress(skill, isGroup, nestingLevel)}
+            {renderSkillLevel(skill, isGroup, nestingLevel)}
         </Grid.Column>
     </Grid>
 );
 
 const renderSkill = (skill, isGroup, nestingLevel) => (
     (skill.commentId || skill.descriptionId) ?
-        <SkillPopup skill={skill}>
-            {renderSkillGrid(skill, isGroup, nestingLevel, true)}
-        </SkillPopup> : renderSkillGrid(skill, isGroup, nestingLevel)
+        renderSkillPopup(skill, renderSkillGrid(skill, isGroup, nestingLevel, true))
+        : renderSkillGrid(skill, isGroup, nestingLevel)
 );
 
 const Skill = ({skill, isGroup, nestingLevel=0}) => (
     <Container className="Skill">
         {isGroup ?
-            <Header inverted size={nestingLevel == 0 ? 'large' : nestingLevel == 1 ? 'medium' : 'small'}>
+            <Header inverted size={nestingLevel === 0 ? 'large' : nestingLevel === 1 ? 'medium' : 'small'}>
                 {renderSkill(skill, isGroup, nestingLevel)}
             </Header> :
             <div>

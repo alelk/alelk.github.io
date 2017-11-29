@@ -12,6 +12,9 @@ const messages = {
     'menu.language' : "Язык",
     'action.more' : "Подробнее",
 
+    'contacts.phone' : '+7 (904) 069-24-23',
+    'contacts.email' : 'elckinne@gmail.com',
+
     "skills.java" : "Разработка на Java",
     "skills.java_description" : "Java— сильно типизированный объектно-ориентированный язык программирования. " +
     "Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой компьютерной " +

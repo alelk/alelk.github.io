@@ -1,13 +1,22 @@
-.Skill .clickable .progress,
+.Skill .clickable .skillLevel,
 .Skill .clickable .skillTitle
 {
     cursor: pointer;
 }
 
-.Skill .clickable .progress:hover {
+.Skill .clickable .skillLevel:hover {
     box-shadow: 0 0 12px #cfc9ff !important;
 }
 
 .Skill .clickable .skillTitle:hover {
     text-shadow: 0 0 12px #cfc9ff !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .Skill .column {
+        text-align: center !important;
+    }
+    .Skill .skillLevel {
+        width: 100% !important;
+    }
 }
