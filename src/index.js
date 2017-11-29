@@ -3,6 +3,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store/configureStore'
 import {loadMessages} from './messages/messages'
+import {baseUri} from './util/util'
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -23,7 +24,7 @@ const preloadedState = {
     }
 };
 
-const history = createHistory();
+const history = createHistory({basename: baseUri});
 const store = configureStore(history, preloadedState);
 
 const AppWrapper = () => (
