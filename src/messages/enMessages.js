@@ -28,6 +28,10 @@ const messages = {
     "skills.java.hibernate" : "Hibernate",
     "skills.java.hibernate_description" : "Hibernate ORM is an object-relational mapping tool for the Java " +
     "programming language. It provides a framework for mapping an object-oriented domain model to a relational database.",
+    "skills.java.jpa" : "JPA",
+    "skills.java.jpa_description" : "The Java Persistence API is a Java application programming interface " +
+    "specification that describes the management of relational data in applications using Java Platform, " +
+    "Standard Edition and Java Platform, Enterprise Edition.",
     "skills.java.rxjava" : "RxJava",
     "skills.java.rxjava_description" : "RxJava – Reactive Extensions for the JVM – a library for composing " +
     "asynchronous and event-based programs using observable sequences for the Java VM.",
