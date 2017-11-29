@@ -1,6 +1,6 @@
 {
-  "name": "alex-elkin-developer-website",
-  "homepage": "https://alelk.github.io/alex-elkin-developer-website",
+  "name": "alelk.github.io",
+  "homepage": "https://alelk.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
