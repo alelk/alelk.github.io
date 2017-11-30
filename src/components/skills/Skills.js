@@ -7,18 +7,7 @@ import Skill, {skillType} from './Skill'
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormattedMessage } from 'react-intl'
-import {
-    Segment
-} from 'semantic-ui-react'
-
-const renderSkill = (skill, key) => (
-    <div key={key}>
-        <FormattedMessage id={skill.titleId} defaultMessage={skill.defaultTitle}/>
-        {skill.skills && <div>{skill.skills.map(renderSkill)}</div>}
-        {skill.groups && <div>{skill.groups.map(renderSkill)}</div>}
-    </div>
-);
+import {Segment} from 'semantic-ui-react'
 
 const Skills = ({skills}) => (
     <Segment inverted>

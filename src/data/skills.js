@@ -4,7 +4,7 @@
  * Created by Alex Elkin on 22.11.2017.
  */
 
-const skills = [
+export const skills = [
     {
         titleId: "skills.java",
         commentId: "skills.java_comment",
@@ -465,5 +465,3 @@ const skills = [
         ]
     }
 ];
-
-export default skills;
