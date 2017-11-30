@@ -1,12 +1,17 @@
 {
   "main.css": "static/css/main.a17cdd05.css",
   "main.css.map": "static/css/main.a17cdd05.css.map",
-  "main.js": "static/js/main.a8b2aa35.js",
-  "main.js.map": "static/js/main.a8b2aa35.js.map",
+  "main.js": "static/js/main.dfd9be27.js",
+  "main.js.map": "static/js/main.dfd9be27.js.map",
+  "static\\media\\bcms-logo.png": "static/media/bcms-logo.8fad369e.png",
+  "static\\media\\bcpt-logo.png": "static/media/bcpt-logo.d459255d.png",
   "static\\media\\flags.png": "static/media/flags.9c74e172.png",
   "static\\media\\icons.eot": "static/media/icons.674f50d2.eot",
   "static\\media\\icons.svg": "static/media/icons.912ec66d.svg",
   "static\\media\\icons.ttf": "static/media/icons.b06871f2.ttf",
   "static\\media\\icons.woff": "static/media/icons.fee66e71.woff",
-  "static\\media\\icons.woff2": "static/media/icons.af7ae505.woff2"
+  "static\\media\\icons.woff2": "static/media/icons.af7ae505.woff2",
+  "static\\media\\opc-bridge-logo.png": "static/media/opc-bridge-logo.c73a4471.png",
+  "static\\media\\pwsongs-logo.png": "static/media/pwsongs-logo.e58db2a4.png",
+  "static\\media\\vi-logo.png": "static/media/vi-logo.864750a0.png"
 }
