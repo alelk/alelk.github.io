@@ -232,7 +232,26 @@ const messages = {
     "skills.other.assembler" : "Assembly language",
     "skills.other.assembler_description" : "Assembly language - an assembly language, often abbreviated asm, is a low-level " +
     "programming language for a computer, or other programmable device, in which there is a very strong correspondence " +
-    "between the language and the architecture's machine code instructions."
+    "between the language and the architecture's machine code instructions.",
+
+    "projects.bcpt" : "Blood Centre Product Tracker",
+    "projects.bcpt_description" : "BCPT is a product management system developed for the Blood Centre of Nizhny " +
+    "Novgorod. BCPT provides comfortable functionality to tracking product transfers, searching by various criteria, " +
+    "storing into database, generating PDF/MS Word/MS Excell reports and much more.",
+    "projects.bcms" : "Blood Centre Management System",
+    "projects.bcms_description" : "BCMS is an automation system working on medicinal production. BCMS allows to perform " +
+    "the following operations: control manufacturing devices, managing production processes, archiving data, generating " +
+    "reports and much more.",
+    "projects.opc-bridge" : "OPC Bridge Server",
+    "projects.opc-bridge_description" : "OPC Bridge allows connect Java EE app and various OPC Servers, which can working " +
+    "only on Windows system and communicating only with OLE/ActiveX/COM/DCOM. My OPC Bridge Server uses asynchronous " +
+    "socket channels to communicate with Java Apps and DCOM to connect to OPC Servers.",
+    "projects.pwsongs" : "P&W Songs for Android",
+    "projects.pwsongs_description" : "P&W Songs is an Android app which contains christian songs collection. It " +
+    "provides useful full-text-search, favorites, viewing history etc.",
+    "projects.vi" : "Virus Inactivation App",
+    "projects.vi_description" : "VI App as a SCADA system to automation virus inactivation process on medicinal " +
+    "production: monitoring, archiving data, generating reports."
 };
 
 export default messages;

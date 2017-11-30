@@ -6,9 +6,11 @@
 import AppHeader from './AppHeader'
 import AppFooter from './AppFooter'
 import StickyMenu from './StickyMenu'
-import Skills from './skill/Skills'
+import Skills from './skills/Skills'
+import Projects from './projects/Projects'
 import './App.css';
-import skills from '../data/skills'
+import {skills} from '../data/skills'
+import {projects} from '../data/projects'
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -51,7 +53,7 @@ class App extends Component {
                                 menuItems={this.menuItems()}/>
                 </AppHeader>
                 <Route exact path="/" render={() => <Skills skills={skills}/>}/>
-                <Route path="/projects" render={() => <div style={{color:'white'}}>The Projects page is developing yet.</div>}/>
+                <Route path="/projects" render={() => <Projects projects={projects}/>}/>
                 <AppFooter menuItems={this.menuItems()}/>
             </div>
         );

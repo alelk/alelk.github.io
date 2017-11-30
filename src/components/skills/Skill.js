@@ -22,7 +22,7 @@ const renderSkillLevel = (skill, isGroup, nestingLevel) => (
 );
 
 const renderSkillPopup = (skill, trigger) => (
-    <Popup trigger={trigger} wide="very" on={['click']} hideOnScroll position="bottom center">
+    <Popup trigger={trigger} wide="very" on={['click']} hideOnScroll position="bottom center" flowing hoverable>
         <Popup.Content>
             {skill.commentId && <FormattedMessage id={skill.commentId}/>}
             {skill.descriptionId &&
