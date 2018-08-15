@@ -6,19 +6,18 @@
 
 import React from 'react'
 import {
-    Container,Header, Segment
+  Container, Header, Segment
 } from 'semantic-ui-react'
-import { FormattedMessage } from 'react-intl'
-
+import {FormattedMessage} from 'react-intl'
 
 const AppHeader = ({children}) => (
-    <Segment inverted>
+  <Segment inverted style={{backgroundColor: "transparent"}}>
     <Container className="AppHeader">
-        <Header as='h1' inverted style={{paddingTop:'1em'}}><FormattedMessage id="app.title"/></Header>
-        <Header as='h4' inverted style={{paddingBottom: '1em'}}><FormattedMessage id="app.subtitle"/></Header>
-        {children}
+      <Header as='h1' inverted style={{paddingTop: '1em'}}><FormattedMessage id="app.title"/></Header>
+      <Header as='h4' inverted style={{paddingBottom: '1em'}}><FormattedMessage id="app.subtitle"/></Header>
+      {children}
     </Container>
-    </Segment>
+  </Segment>
 );
 
 export default AppHeader;

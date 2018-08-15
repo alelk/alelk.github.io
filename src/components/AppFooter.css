@@ -1,0 +1,5 @@
+.AppFooter {
+    padding: 5em 0 !important;
+    background-color: rgba(0,0,0,.4) !important;
+    box-shadow: 0 0 50px rgba(255,255,255,.2) inset !important;
+}

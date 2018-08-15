@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import {Segment} from 'semantic-ui-react'
 
 const Skills = ({skills}) => (
-    <Segment inverted>
+    <Segment inverted style={{backgroundColor: 'transparent'}}>
         {skills && skills.map((skill, key) => <Skill skill={skill} key={key} isGroup/>)}
     </Segment>
 );
