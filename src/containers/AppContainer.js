@@ -10,29 +10,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 
+import './AppContainer.css'
+
 const languages = [
-    {title: "Русский", flagName: "ru", id: "ru"},
-    {title: "English", flagName: "us", id: "en"},
+  {title: "Русский", flagName: "ru", id: "ru"},
+  {title: "English", flagName: "us", id: "en"},
 ];
 
 const AppContainer = ({currentLangId, changeLocale, location}) => (
+  <div className='AppContainer' style={{overflowY: 'scroll'}}>
     <App currentLangId={currentLangId}
          languages={languages}
          onLanguageSelected={lang => changeLocale(lang.id)}
          location={location}/>
+  </div>
 );
 
 AppContainer.propTypes = {
-    currentLangId : PropTypes.string,
-    changeLocale : PropTypes.func,
-    location: PropTypes.object
+  currentLangId: PropTypes.string,
+  changeLocale: PropTypes.func,
+  location: PropTypes.object
 };
 
 const mapStateToProps = (state, ownProps) => ({
-    currentLangId : state.intl.locale,
-    location: state.routing.location
+  currentLangId: state.intl.locale,
+  location: state.routing.location
 });
 
 export default connect(
-    mapStateToProps, {changeLocale}
+  mapStateToProps, {changeLocale}
 )(AppContainer);

@@ -16,7 +16,7 @@ const RootContainer = ({store, history}) => (
     <Provider store={store}>
         <IntlProvider>
             <ConnectedRouter history={history}>
-                <div>
+                <div style={{height: '100%', width: '100%'}}>
                     <AppContainer/>
                 </div>
             </ConnectedRouter>

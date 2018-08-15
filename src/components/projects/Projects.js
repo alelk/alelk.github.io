@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 import {Segment, Card} from 'semantic-ui-react'
 
 const Projects = ({projects}) => (
-    <Segment inverted>
+    <Segment inverted style={{backgroundColor: 'transparent'}}>
         <Card.Group style={{justifyContent:"center"}}>
             {projects && projects.map((project, key) => <Project project={project} key={key}/>)}
         </Card.Group>
